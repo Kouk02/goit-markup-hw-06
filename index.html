@@ -427,8 +427,66 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="form" name="modal-form">
+          <label class="modal-label">
+            <span class="span-form">Name</span>
+            <span class="span-input">
+              <input type="text" class="input-item" name="user-name" required />
+              <svg class="form-icon" width="18px" heigth="24px">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label">
+            <span class="span-form">Phone</span>
+            <span class="span-input">
+              <input type="tel" class="input-item" name="user-name" required />
+              <svg class="form-icon" width="18px" heigth="24px">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label">
+            <span class="span-form">Email</span>
+            <span class="span-input">
+              <input
+                type="text"
+                class="input-item"
+                name="user-name"
+                required
+                id="user-email"
+              />
+              <svg class="form-icon" width="18px" heigth="24px">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label-message">
+            <span class="span-form" for="user-text">Comment</span>
+            <textarea
+              class="form-message"
+              name="user-message"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <label class="modal-form-policy" for="privacy">
+            <input
+              type="checkbox"
+              id="user-policy"
+              name="user-policy"
+              required
+              class="checkbox-policy-modal"
+            />
+            <label class="form-policy" for="user-policy"
+              >I accept the terms and conditions of the
+              <a class="link-policy" href>Privacy Policy</a></label
+            >
+          </label>
+          <button type="sumbit" class="field-botton">Send</button>
+        </form>
       </div>
+      <script src="./js/modal.js"></script>
     </div>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
