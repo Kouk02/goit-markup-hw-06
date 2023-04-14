@@ -30,7 +30,7 @@ button {
         rgba(46, 47, 66, 0.7));
     --typical-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --color-navy-blue-modal: rgba(46, 47, 66, 0.4);
-    --color-policy-text: #757575
+    --color-policy-text: #8E8F99;
 }
 
 
@@ -830,11 +830,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .modal-form-policy {
     display: flex;
     align-items: center;
-    min-width: 338px;
-    min-height: 16px;
     font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.04em;
-    line-height: 14px;
     margin-bottom: 24px;
 }
 .checkbox-policy-modal{
@@ -863,7 +861,82 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .checkbox-policy-modal:checked + .form-policy::before{
     background-color: var(--color-ocean);
     border: none;
-    background-image: url(../images/icons.svg#icon-ok);
+    background-image: url(../images/check.svg);
     background-position: center;
+    background-repeat: no-repeat;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/*=================footer forms=================*/
+.footer-form{
+display: flex;
+flex-direction: column;
+
+
+}
+.footer-form-title{
+    display: flex;
+    margin-bottom: 24px;
     color: var(--color-white);
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.email-input{
+    display: flex;
+}
+
+.label-input{
+    margin-right: 24px;
+    min-width: 264px;
+    min-height: 40px;
+}
+.subscribe-form{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--color-navy-blue);
+    padding: 8px 16px;
+    outline: none;
+    color: var(--color-white);
+    align-items: center;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    line-height: 24px;
+    width: 100%;
+    border-color: var(--color-light-slate);
+}
+
+.button-subsctibe{
+    display: flex;
+    min-width: 165px;
+    min-height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+}
+.icon-footer-sumbit{
+    width: 24px;
+    height: 24px;
+    fill: var(--color-white);
+}
+
+.button-subsctibe:hover,
+.button-subsctibe:focus{
+    background-color: var(--color-ocean);
 }
