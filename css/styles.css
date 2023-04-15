@@ -790,8 +790,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     height: 24px;
 }
 
-.form-icon:focus {
-    color: var(--color-iris);
+.input-item:focus+.form-icon {
+    fill: var(--color-iris);
 }
 .form-message{
     display: block;
@@ -810,6 +810,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     border-color: var(--color-iris);
 }
 .field-botton {
+    display: flex;
+    justify-content: center;
     padding: 16px 32px;
     align-self: center;
     color: var(--color-white);
@@ -844,10 +846,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     font-size: 12px;
     line-height: 14px;
     color: var(--color-policy-text);
+    align-items: center;
 }
 .link-policy{
    color: var(--color-iris); 
    text-decoration: underline;
+   margin-left: 4px;
 }
 .form-policy::before{
     content: '';
