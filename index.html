@@ -418,15 +418,29 @@
             </li>
           </ul>
         </div>
-      <div class="footer-form">
-        <p class="footer-form-title">Subscribe</p>
-<form class="email-input">
-  <label class="label-input">
-<input class="subscribe-form" type="email" name="user-email" id="user-email" placeholder="E-mail">
-  </label>
-  <button type="submit" class="button-subsctibe">Subscribe<svg class="icon-footer-sumbit" width="24px" heigth="24px"><use href="./images/icons.svg#icon-Frame"></use></svg></button>
-</form>
-      </div>
+        <div class="footer-form">
+          <p class="footer-form-title">Subscribe</p>
+          <form class="email-input">
+            <label class="label-input">
+              <input
+                class="subscribe-form"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="button-subsctibe">
+              Subscribe<svg
+                class="icon-footer-sumbit"
+                width="24px"
+                height="24px"
+              >
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="back-window is-hidden" data-modal>
@@ -442,7 +456,7 @@
             <span class="span-form">Name</span>
             <span class="span-input">
               <input type="text" class="input-item" name="user-name" required />
-              <svg class="form-icon" width="18px" heigth="24px">
+              <svg class="form-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </span>
@@ -451,7 +465,7 @@
             <span class="span-form">Phone</span>
             <span class="span-input">
               <input type="tel" class="input-item" name="user-name" required />
-              <svg class="form-icon" width="18px" heigth="24px">
+              <svg class="form-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </span>
@@ -464,30 +478,30 @@
                 class="input-item"
                 name="user-email"
                 required
-                id="user-email"
+                id="email"
               />
-              <svg class="form-icon" width="18px" heigth="24px">
+              <svg class="form-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </span>
           </label>
           <label class="modal-label-message">
-            <span class="span-form" for="user-text">Comment</span>
+            <span class="span-form">Comment</span>
             <textarea
               class="form-message"
               name="user-message"
               placeholder="Text input"
             ></textarea>
           </label>
-          <label class="modal-form-policy" for="privacy">
+          <label class="modal-form-privacy" for="privacy">
             <input
               type="checkbox"
-              id="user-policy"
+              id="privacy"
               name="user-policy"
               required
               class="checkbox-policy-modal visually-hidden"
             />
-            <label class="form-policy" for="user-policy"></label>
+            <label class="form-policy" for="privacy">
               I accept the terms and conditions of the
               <a class="link-policy" href>Privacy Policy</a></label
             >
